@@ -32,15 +32,16 @@ const DogImages: React.FC = () => {
         </Button>
 
         {/*Conditional rendering with placeholder for loading*/}
-        <div className="m-2 h-full w-auto relative">
+        <div className="m-5 h-auto max-w-full relative">
           {dogImageUrl && (
             <Image
               src={dogImageUrl}
+              className="rounded-3xl"
               alt="Breed Image"
               style={{
                 maxHeight: "550px",
                 objectFit: "contain",
-                maxWidth: "100%",
+                maxWidth: "max-content",
               }}
               width={1000}
               height={550}

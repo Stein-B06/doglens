@@ -91,12 +91,12 @@ const ChooseBreedComponent: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-4">
+    <div className="flex flex-col items-center justify-center my-1">
       <div>
         <select
           value={selectedBreed || ""}
           onChange={(e) => handleBreedSelect(e.target.value)}
-          className="border border-gray-300 rounded p-2"
+          className=" rounded p-2"
         >
           <option value="" disabled>
             Select a breed
@@ -113,7 +113,7 @@ const ChooseBreedComponent: React.FC = () => {
             <select
               value={selectedSubBreed || ""}
               onChange={(e) => handleSubBreedSelect(e.target.value)}
-              className=" border-gray-300 rounded p-2 ml-2"
+              className="rounded p-2 ml-2"
             >
               <option value="" disabled>
                 Select a sub-breed
@@ -131,18 +131,18 @@ const ChooseBreedComponent: React.FC = () => {
       </div>
 
       {breedImage && (
-        <div className="flex justify-center relative w-full h-96 m-5">
+        <div className="rounded-3xl flex justify-center relative w-full h-96 m-5">
           <Image
-            className="rounded-xl"
+            className="rounded-3xl"
             src={breedImage}
             alt="Random Dog"
             style={{
-              maxHeight: "500px",
-              objectFit: "contain",
-              maxWidth: "500px",
+              maxHeight: "550px",
+              objectFit: "cover",
+              maxWidth: "max-content",
             }}
-            width={500}
-            height={500}
+            width={1000}
+            height={550}
           />
         </div>
       )}
@@ -152,7 +152,7 @@ const ChooseBreedComponent: React.FC = () => {
           className="mt-1 bg-cyan-900 text-center bg-opacity-55 rounded-lg backdrop-filter backdrop-blur-lg hover:bg-cyan-950 text-white px-4 py-2"
           disabled={!selectedSubBreed && !selectedBreed} // Disable button if no breed or sub-breed is selected
         >
-          {isPlaying ? "Pause" : "Play"}
+          {isPlaying ? "Pause slideshow" : "Play slideshow"}
         </button>
       </div>
     </div>
