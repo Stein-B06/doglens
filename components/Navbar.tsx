@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
+import Image from "next/image";
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,18 +12,26 @@ const Navbar: React.FC = () => {
     setIsOpen(false);
   };
 
-  const handleLogoClick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <nav className="bg-cyan-900 fixed w-full top-0 bg-opacity-25 backdrop-filter backdrop-blur-lg py-4 mb-10 z-10">
       <div className="max-w-8xl mx-auto px-4">
         <div className="flex justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center" onClick={handleLogoClick}>
+          <div className="flex items-center relative">
             <a href="/" className="text-white font-bold">
-              Logo
+              <Image
+                src="/dog2-logo.png"
+                width={150}
+                height={150}
+                priority={true}
+                style={{
+                  height: "150px",
+                  objectFit: "contain",
+                  width: "150px",
+                }}
+                className="md:block my-2"
+                alt="Screenshots of the dashboard project showing desktop version"
+              />
             </a>
           </div>
 

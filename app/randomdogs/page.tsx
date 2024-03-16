@@ -1,4 +1,4 @@
-import DogImages from "../components/randomDogs";
+import DogImages from "@/components/randomDogs";
 
 export default function Page() {
   return (

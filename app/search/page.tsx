@@ -1,4 +1,4 @@
-import ChooseBreedComponent from "../components/ChooseBreedComponent";
+import ChooseBreedComponent from "@/components/ChooseBreedComponent";
 
 export default function Page() {
   return (

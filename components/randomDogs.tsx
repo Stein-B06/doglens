@@ -1,23 +1,37 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Loading from "./loading";
 import { Button } from "@mui/material";
+import { run } from "node:test";
+import { count } from "console";
 
 const DogImages: React.FC = () => {
   const [dogImageUrl, setDogImageUrl] = useState<string>("");
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  //So that function is not runned twice
+  const effectRan = useRef(false);
+
+  useEffect(() => {
+    if (effectRan.current === false) {
+      fetchRandomDogImage();
+
+      return () => {
+        effectRan.current = true;
+      };
+    }
+  }, []);
+  // You can call any function or perform any action here
 
   const fetchRandomDogImage = async () => {
-    setIsLoading(true); // Set loading state to true before fetching to first display "loading".
+    console.log("fetchRandomDogImage");
+
     try {
       const response = await fetch("https://dog.ceo/api/breeds/image/random");
       const data = await response.json();
       setDogImageUrl(data.message);
     } catch (error) {
       console.error("Error fetching random dog image:", error);
-    } finally {
-      setIsLoading(false); // Set loading state to false after fetching
     }
   };
 
@@ -32,25 +46,20 @@ const DogImages: React.FC = () => {
         </Button>
 
         {/*Conditional rendering with placeholder for loading*/}
-        <div className="m-5 h-auto max-w-full relative">
+        <div className="m-5  relative">
           {dogImageUrl && (
             <Image
               src={dogImageUrl}
               className="rounded-3xl"
               alt="Breed Image"
               style={{
-                maxHeight: "550px",
+                height: "500px",
                 objectFit: "contain",
-                maxWidth: "max-content",
+                width: "700px",
               }}
               width={1000}
               height={550}
             />
-          )}
-          {isLoading && (
-            <div className="absolute inset-0 flex justify-center items-center bg-transparent bg-opacity-75">
-              <Loading /> {/*Always render the loading component*/}
-            </div>
           )}
         </div>
       </div>
