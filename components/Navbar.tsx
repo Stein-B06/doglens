@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
                   width: "150px",
                 }}
                 className="md:block my-2"
-                alt="Screenshots of the dashboard project showing desktop version"
+                alt="logo"
               />
             </a>
           </div>
