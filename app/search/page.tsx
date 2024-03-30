@@ -2,8 +2,8 @@ import ChooseBreedComponent from "@/components/ChooseBreedComponent";
 
 export default function Page() {
   return (
-    <main className="mt-28">
-      <div className="text-6xl font-bold text-white px-4 py-2 text-center">
+    <main className="mt-48">
+      <div className="text-white text-center text-2xl md:text-4xl mb-5 font-bold">
         <h3>Pick your dog</h3>
       </div>
       <div className="mt-8">

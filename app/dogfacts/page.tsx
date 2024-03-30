@@ -15,7 +15,7 @@ export const lusitana = Lusitana({
 export default function Page() {
   return (
     <div className="mt-48">
-      <h1 className=" text-white text-center text-2xl md:text-4xl mb-5">
+      <h1 className=" text-white text-center text-2xl md:text-4xl mb-5 font-bold">
         Some Dog Facts
       </h1>
 
@@ -33,7 +33,7 @@ export default function Page() {
         {/* <div className={styles.shape}>test</div> */}
         <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4 ">
           <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-2xl md:leading-10 p-3`}
+            className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
             <strong>
               2. The Basenji dog breed is unique because it doesnt bark like
@@ -43,7 +43,7 @@ export default function Page() {
         </div>
         <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-2xl md:leading-10 p-3`}
+            className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
             <strong>
               3. The worlds oldest known breed is the Saluki, which dates back
@@ -53,7 +53,7 @@ export default function Page() {
         </div>
         <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-2xl md:leading-10 p-3`}
+            className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
             <strong>
               4. The Newfoundland breed has webbed feet, making it an excellent
@@ -63,7 +63,7 @@ export default function Page() {
         </div>
         <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-2xl md:leading-10 p-3`}
+            className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
             <strong>
               5. The worlds smallest dog breed is the Chihuahua, named after the
@@ -73,7 +73,7 @@ export default function Page() {
         </div>
         <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-2xl md:leading-10 p-3`}
+            className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
             <strong>
               6. Dogs have three eyelids. The third eyelid, called a haw, helps
@@ -83,7 +83,7 @@ export default function Page() {
         </div>
         <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-2xl md:leading-10 p-3`}
+            className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
             <strong>
               7. The Basenji is often called the barkless dog but they are not
@@ -93,7 +93,7 @@ export default function Page() {
         </div>
         <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-2xl md:leading-10 p-3`}
+            className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
             <strong>
               8. The most popular breed in the United States is the Labrador
@@ -103,7 +103,7 @@ export default function Page() {
         </div>
         <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-2xl md:leading-10 p-3`}
+            className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
             <strong>
               9. Dogs have a special membrane called the Jacobsons organ,
@@ -114,7 +114,7 @@ export default function Page() {
         </div>
         <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-2xl md:leading-10 p-3`}
+            className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
             <strong>
               10. The ancient Greeks and Romans believed that dog saliva had

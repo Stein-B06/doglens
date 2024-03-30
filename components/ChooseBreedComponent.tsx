@@ -131,28 +131,31 @@ const ChooseBreedComponent: React.FC = () => {
       </div>
 
       {breedImage && (
-        <div className="rounded-3xl flex justify-center relative w-full h-96 m-5">
+        <div className="flex justify-center relative w-full h-96 m-5">
           <Image
-            className="rounded-3xl"
+            className=""
             src={breedImage}
             alt="Random Dog"
             style={{
-              maxHeight: "550px",
-              objectFit: "cover",
-              maxWidth: "max-content",
+              height: "500px",
+              objectFit: "contain",
+              width: "600px",
             }}
             width={1000}
             height={550}
           />
         </div>
       )}
-      <div>
+      <div className="mt-20">
         <button
           onClick={togglePlayPause}
-          className="mt-1 bg-cyan-900 text-center bg-opacity-55 rounded-lg backdrop-filter backdrop-blur-lg hover:bg-cyan-950 text-white px-4 py-2"
-          disabled={!selectedSubBreed && !selectedBreed} // Disable button if no breed or sub-breed is selected
+          className="mt-10 bg-cyan-800 text-center rounded-lg backdrop-filter backdrop-blur-lg hover:bg-cyan-950  text-white px-4 py-2"
+          disabled={!selectedBreed && !selectedSubBreed}
+          // Disable button if no breed or sub-breed is selected
         >
-          {isPlaying ? "Pause slideshow" : "Play slideshow"}
+          {isPlaying
+            ? "Stop showing images of selected breed"
+            : "Start showing images of selected breed"}
         </button>
       </div>
     </div>
