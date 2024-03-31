@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { Button } from "@mui/material";
 
 interface Breed {
   breed: string;
@@ -147,16 +148,16 @@ const ChooseBreedComponent: React.FC = () => {
         </div>
       )}
       <div className="mt-20">
-        <button
+        <Button
           onClick={togglePlayPause}
-          className="mt-10 bg-cyan-800 text-center rounded-lg backdrop-filter backdrop-blur-lg hover:bg-cyan-950  text-white px-4 py-2"
+          className="mt-10 bg-cyan-800 text-center rounded-lg backdrop-filter backdrop-blur-lg hover:!bg-cyan-950  text-white px-4 py-2"
           hidden={!selectedBreed && !selectedSubBreed}
           // Hides the button before breed or sub-breed is selected
         >
           {isPlaying
             ? "Stop showing images of selected breed"
             : "Start showing images of selected breed"}
-        </button>
+        </Button>
       </div>
     </div>
   );
