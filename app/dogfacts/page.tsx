@@ -19,8 +19,8 @@ export default function Page() {
         Some Dog Facts
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-8 mb-5">
-        <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-5 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-8 mb-5 ">
+        <div className="bg-yellow-400 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-5 p-4">
           <p
             className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
@@ -31,7 +31,7 @@ export default function Page() {
           </p>
         </div>
         {/* <div className={styles.shape}>test</div> */}
-        <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4 ">
+        <div className="bg-yellow-400 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4 ">
           <p
             className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
@@ -41,7 +41,7 @@ export default function Page() {
             </strong>
           </p>
         </div>
-        <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
+        <div className="bg-yellow-400 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
             className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
@@ -51,7 +51,7 @@ export default function Page() {
             </strong>
           </p>
         </div>
-        <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
+        <div className="bg-yellow-400 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
             className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
@@ -61,7 +61,7 @@ export default function Page() {
             </strong>
           </p>
         </div>
-        <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
+        <div className="bg-yellow-400 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
             className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
@@ -71,7 +71,7 @@ export default function Page() {
             </strong>
           </p>
         </div>
-        <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
+        <div className="bg-yellow-400 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
             className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
@@ -81,7 +81,7 @@ export default function Page() {
             </strong>
           </p>
         </div>
-        <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
+        <div className="bg-yellow-400 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
             className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
@@ -91,7 +91,7 @@ export default function Page() {
             </strong>
           </p>
         </div>
-        <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
+        <div className="bg-yellow-400 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
             className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
@@ -101,7 +101,7 @@ export default function Page() {
             </strong>
           </p>
         </div>
-        <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
+        <div className="bg-yellow-400 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
             className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >
@@ -112,7 +112,7 @@ export default function Page() {
             </strong>
           </p>
         </div>
-        <div className="bg-cyan-600 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
+        <div className="bg-yellow-400 bg-opacity-25 rounded-xl backdrop-filter backdrop-blur-lg m-4 p-4">
           <p
             className={`${lusitana.className} text-xl text-gray-800 md:text-1xl md:leading-10 p-3`}
           >

@@ -46,7 +46,7 @@ const DogImages: React.FC = () => {
         </Button>
 
         {/*Conditional rendering with placeholder for loading*/}
-        <div className="m-14">
+        <div className="m-6">
           {dogImageUrl && (
             <Image
               className=""
