@@ -12,17 +12,20 @@ export default function Home() {
         <p className="text-center text-xl text-white">
           Where Furry Faces Steal the Spotlight!
         </p>
+        <Image
+          src="/dog2-logo.png"
+          width={950}
+          height={950}
+          style={{
+            height: "450px",
+            objectFit: "cover",
+            width: "550px",
+          }}
+          className=""
+          alt="logo"
+        />
       </div>
-      <div className="flex justify-center">
-        {/* <div className="mt-32 bg-cyan-900 text-center bg-opacity-55 rounded-lg backdrop-filter backdrop-blur-lg hover:bg-cyan-950">
-          <Link
-            href="/search"
-            className="inline-block px-4 py-2 text-white text-center text-3xl "
-          >
-            ENTER
-          </Link>
-        </div> */}
-      </div>
+      <div className="flex justify-center"></div>
     </main>
   );
 }
