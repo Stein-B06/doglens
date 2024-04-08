@@ -154,9 +154,7 @@ const ChooseBreedComponent: React.FC = () => {
           hidden={!selectedBreed && !selectedSubBreed}
           // Hides the button before breed or sub-breed is selected
         >
-          {isPlaying
-            ? "Stop showing images of selected breed"
-            : "Start showing images of selected breed"}
+          {isPlaying ? "Pause" : "Play"}
         </Button>
       </div>
     </div>

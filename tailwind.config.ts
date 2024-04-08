@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+const plugins = require("tailwindcss/plugin");
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
