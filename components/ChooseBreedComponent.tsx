@@ -151,6 +151,7 @@ const ChooseBreedComponent: React.FC = () => {
               height: "500px",
               objectFit: "cover",
               width: "500px",
+              borderRadius: "50px",
             }}
             width={500}
             height={500}

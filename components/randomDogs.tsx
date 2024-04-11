@@ -38,7 +38,7 @@ const DogImages: React.FC = () => {
   return (
     <>
       <div className="flex justify-center relative h-96 m-2">
-        <div className="absolute top-1 ">
+        <div className="absolute top-5 ">
           <Button
             onClick={fetchRandomDogImage}
             className="!bg-cyan-800 text-center !text-white hover:!bg-cyan-950"
@@ -50,14 +50,14 @@ const DogImages: React.FC = () => {
         <div className="">
           {dogImageUrl && (
             <Image
-              className="p-4"
+              className="p-8"
               src={dogImageUrl}
               alt="Breed Image"
               style={{
                 height: "500px",
                 objectFit: "cover",
                 width: "500px",
-                borderRadius: "22px",
+                borderRadius: "50px",
               }}
               width={1000}
               height={550}
