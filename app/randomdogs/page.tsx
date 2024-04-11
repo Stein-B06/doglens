@@ -2,7 +2,7 @@ import DogImages from "@/components/randomDogs";
 
 export default function Page() {
   return (
-    <main className="mt-28">
+    <main className="mt-32">
       {/* <div className="text-6xl font-bold text-white px-4 py-2 text-center">
         <h3>Find your dog</h3>
       </div> */}

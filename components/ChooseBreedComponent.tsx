@@ -133,30 +133,31 @@ const ChooseBreedComponent: React.FC = () => {
 
       {breedImage && (
         <div className="flex justify-center relative w-full h-96 m-2">
+          <div className="absolute top-5 ">
+            <Button
+              onClick={togglePlayPause}
+              className="bg-cyan-800 text-center rounded-lg backdrop-filter backdrop-blur-lg hover:!bg-cyan-950  text-white px-4 py-2"
+              hidden={!selectedBreed && !selectedSubBreed}
+              // Hides the button before breed or sub-breed is selected
+            >
+              {isPlaying ? "Pause" : "Play"}
+            </Button>
+          </div>
           <Image
-            className="p-6"
+            className="p-4"
             src={breedImage}
             alt="Random Dog"
             style={{
               height: "500px",
-              objectFit: "contain",
+              objectFit: "cover",
               width: "500px",
+              borderRadius: "22px",
             }}
             width={500}
             height={500}
           />
         </div>
       )}
-      <div className="mt-20">
-        <Button
-          onClick={togglePlayPause}
-          className="mt-10 bg-cyan-800 text-center rounded-lg backdrop-filter backdrop-blur-lg hover:!bg-cyan-950  text-white px-4 py-2"
-          hidden={!selectedBreed && !selectedSubBreed}
-          // Hides the button before breed or sub-breed is selected
-        >
-          {isPlaying ? "Pause" : "Play"}
-        </Button>
-      </div>
     </div>
   );
 };

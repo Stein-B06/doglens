@@ -14,7 +14,7 @@ export const lusitana = Lusitana({
 
 export default function Page() {
   return (
-    <div className="mt-48">
+    <div className="mt-32">
       <h1 className=" text-white text-center text-2xl md:text-4xl mb-5 font-bold">
         Some Dog Facts
       </h1>

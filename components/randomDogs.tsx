@@ -37,25 +37,27 @@ const DogImages: React.FC = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center">
-        <Button
-          onClick={fetchRandomDogImage}
-          className="!mt-10 bg-cyan-800 text-center rounded-lg backdrop-filter backdrop-blur-lg hover:bg-cyan-950  text-white px-4 py-2"
-        >
-          Click for dogs
-        </Button>
-
+      <div className="flex justify-center relative h-96 m-2">
+        <div className="absolute top-1 ">
+          <Button
+            onClick={fetchRandomDogImage}
+            className="text-center rounded-lg backdrop-filter backdrop-blur-lg hover:!bg-cyan-950 px-4 py-2"
+          >
+            Click for dogs
+          </Button>
+        </div>
         {/*Conditional rendering with placeholder for loading*/}
-        <div className="m-6">
+        <div className="">
           {dogImageUrl && (
             <Image
               className=""
               src={dogImageUrl}
               alt="Breed Image"
               style={{
-                height: "600px",
-                objectFit: "contain",
-                width: "600px",
+                height: "500px",
+                objectFit: "cover",
+                width: "500px",
+                borderRadius: "22px",
               }}
               width={1000}
               height={550}
