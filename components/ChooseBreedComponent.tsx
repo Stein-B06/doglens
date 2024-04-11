@@ -133,7 +133,7 @@ const ChooseBreedComponent: React.FC = () => {
 
       {breedImage && (
         <div className="flex justify-center relative h-96">
-          <div className="absolute top-5 ">
+          <div className="absolute top-4 ">
             <Button
               onClick={togglePlayPause}
               className="!bg-cyan-800 text-center !text-white hover:!bg-cyan-950"
