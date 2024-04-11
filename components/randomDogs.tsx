@@ -41,7 +41,7 @@ const DogImages: React.FC = () => {
         <div className="absolute top-1 ">
           <Button
             onClick={fetchRandomDogImage}
-            className="text-center rounded-lg backdrop-filter backdrop-blur-lg hover:!bg-cyan-950 px-4 py-2"
+            className="!bg-cyan-800 text-center !text-white hover:!bg-cyan-950"
           >
             Click for dogs
           </Button>
@@ -50,7 +50,7 @@ const DogImages: React.FC = () => {
         <div className="">
           {dogImageUrl && (
             <Image
-              className=""
+              className="p-4"
               src={dogImageUrl}
               alt="Breed Image"
               style={{

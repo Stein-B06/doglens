@@ -3,9 +3,9 @@ import DogImages from "@/components/randomDogs";
 export default function Page() {
   return (
     <main className="mt-32">
-      {/* <div className="text-6xl font-bold text-white px-4 py-2 text-center">
+      <div className="text-white text-center text-2xl md:text-4xl mb-5 font-bold">
         <h3>Find your dog</h3>
-      </div> */}
+      </div>
       <div className="mt-8">
         <DogImages />
       </div>
