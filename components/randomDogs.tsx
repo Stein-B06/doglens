@@ -1,10 +1,10 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Loading from "./loading";
+// import Loading from "./loading";
 import { Button } from "@mui/material";
-import { run } from "node:test";
-import { count } from "console";
+// import { run } from "node:test";
+// import { count } from "console";
 
 const DogImages: React.FC = () => {
   const [dogImageUrl, setDogImageUrl] = useState<string>("");
@@ -37,32 +37,37 @@ const DogImages: React.FC = () => {
 
   return (
     <>
-      <div className="flex justify-center relative h-96 m-2">
-        <div className="absolute top-4 ">
-          <Button
-            onClick={fetchRandomDogImage}
-            className="!bg-cyan-800 text-center !text-white hover:!bg-cyan-950"
-          >
-            Click for dogs
-          </Button>
-        </div>
-        {/*Conditional rendering with placeholder for loading*/}
-        <div className="">
+      <div className="flex justify-center items-center flex-col">
+        <div className="rounded-3xl">
           {dogImageUrl && (
             <Image
-              className="p-8"
+              className="p-4 bg-amber-800"
               src={dogImageUrl}
               alt="Breed Image"
               style={{
                 height: "500px",
                 objectFit: "cover",
                 width: "500px",
-                borderRadius: "50px",
+                borderRadius: "24px",
+                boxShadow:
+                  "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
               }}
               width={1000}
               height={550}
             />
           )}
+        </div>
+        <div className="flex justify-center ">
+          <Button
+            style={{
+              boxShadow:
+                "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
+            }}
+            onClick={fetchRandomDogImage}
+            className="!bg-cyan-800 text-center !text-white hover:!bg-cyan-950  "
+          >
+            Click for dogs
+          </Button>
         </div>
       </div>
     </>
