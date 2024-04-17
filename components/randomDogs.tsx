@@ -39,15 +39,27 @@ const DogImages: React.FC = () => {
     <>
       <div className="flex justify-center items-center flex-col">
         <div className="rounded-3xl">
+          <div className="flex justify-center ">
+            <Button
+              style={{
+                boxShadow:
+                  "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
+              }}
+              onClick={fetchRandomDogImage}
+              className="!bg-cyan-800 text-center !text-white hover:!bg-cyan-950  "
+            >
+              Click for dogs
+            </Button>
+          </div>
           {dogImageUrl && (
             <Image
               className="p-4 bg-amber-800"
               src={dogImageUrl}
               alt="Breed Image"
               style={{
-                height: "500px",
+                height: "400px",
                 objectFit: "cover",
-                width: "500px",
+                width: "400px",
                 borderRadius: "24px",
                 boxShadow:
                   "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
@@ -56,18 +68,6 @@ const DogImages: React.FC = () => {
               height={550}
             />
           )}
-        </div>
-        <div className="flex justify-center ">
-          <Button
-            style={{
-              boxShadow:
-                "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
-            }}
-            onClick={fetchRandomDogImage}
-            className="!bg-cyan-800 text-center !text-white hover:!bg-cyan-950  "
-          >
-            Click for dogs
-          </Button>
         </div>
       </div>
     </>

@@ -133,14 +133,28 @@ const ChooseBreedComponent: React.FC = () => {
 
       {breedImage && (
         <div className="flex justify-center flex-col mt-6">
+          <div className="flex justify-center">
+            <Button
+              style={{
+                boxShadow:
+                  "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
+              }}
+              onClick={togglePlayPause}
+              className="!bg-cyan-800 text-center !text-white hover:!bg-cyan-950"
+              hidden={!selectedBreed && !selectedSubBreed}
+              // Hides the button before breed or sub-breed is selected
+            >
+              {isPlaying ? "Pause" : "Play"}
+            </Button>
+          </div>
           <Image
             className="p-4 bg-amber-800"
             src={breedImage}
             alt="Random Dog"
             style={{
-              height: "500px",
+              height: "400px",
               objectFit: "cover",
-              width: "500px",
+              width: "400px",
               borderRadius: "24px",
               boxShadow:
                 "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
@@ -150,20 +164,6 @@ const ChooseBreedComponent: React.FC = () => {
           />
         </div>
       )}
-      <div className="flex justify-center">
-        <Button
-          style={{
-            boxShadow:
-              "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
-          }}
-          onClick={togglePlayPause}
-          className="!bg-cyan-800 text-center !text-white hover:!bg-cyan-950"
-          hidden={!selectedBreed && !selectedSubBreed}
-          // Hides the button before breed or sub-breed is selected
-        >
-          {isPlaying ? "Pause" : "Play"}
-        </Button>
-      </div>
     </div>
   );
 };
