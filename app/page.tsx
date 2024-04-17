@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div className="mt-24 flex flex-col justify-center items-center md:flex md:flex-row md:justify-center text-white m-4 ">
           <Image
-            src="/anidogs2.jpeg"
+            src="/dogs4.jpeg"
             width={500}
             height={500}
             style={{
