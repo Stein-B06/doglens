@@ -16,7 +16,7 @@ export default function Home() {
             Where Furry Faces Steal the Spotlight!
           </p>
         </div>
-        <div className="mt-24 flex flex-col justify-center items-center md:flex md:flex-row md:justify-center text-white m-4 ">
+        <div className="pt-8  flex flex-col justify-center items-center md:flex md:flex-row md:justify-center text-white m-4 ">
           <Image
             src="/dogs4.jpeg"
             width={500}
@@ -33,7 +33,7 @@ export default function Home() {
             alt="logo"
           />
 
-          <p className="p-6 md:text-xl md:p-16 md:mx-8 text-white">
+          <p className="mt-2 md:text-xl md:p-16 md:mx-8 text-white">
             With just a click, you&apos;ll be transported into a world of random
             dog images, each one more adorable than the last.<br></br>{" "}
             <span className="">But wait, there&apos;s more!</span> With our
