@@ -1,10 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-// import Loading from "./loading";
 import { Button } from "@mui/material";
-// import { run } from "node:test";
-// import { count } from "console";
+import { poppins } from "@/app/ui/fonts";
 
 const DogImages: React.FC = () => {
   const [dogImageUrl, setDogImageUrl] = useState<string>("");
