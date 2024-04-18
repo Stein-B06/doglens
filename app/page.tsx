@@ -2,14 +2,17 @@
 import Image from "next/image";
 // import Link from "next/link";
 import style from "@/app//css module/homepage.module.css";
+import { poppins } from "@/app/ui/fonts";
 
 export default function Home() {
   return (
     <main className="m-10">
       <div className={style.wrapper}>
         <div className="text-white mb-10">
-          <h1 className="text-6xl font-bold px-4 py-2 text-center mt-32 font-['']">
-            Bark Zone
+          <h1
+            className={`${poppins.className} text-6xl font-bold px-4 py-2 text-center mt-32`}
+          >
+            Pawtopia Planet
           </h1>
 
           <p className="text-center text-xl ">

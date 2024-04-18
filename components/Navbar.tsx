@@ -20,14 +20,15 @@ const Navbar: React.FC = () => {
           <div className="flex items-center relative">
             <a href="/" className="text-white font-bold">
               <Image
-                src="/dog2-logo.png"
+                src="/doglogo5.jpeg"
                 width={150}
                 height={150}
                 priority={true}
                 style={{
-                  height: "150px",
-                  objectFit: "contain",
-                  width: "150px",
+                  height: "80px",
+                  objectFit: "cover",
+                  width: "80px",
+                  borderRadius: "50%",
                 }}
                 className="md:block my-2"
                 alt="logo"
