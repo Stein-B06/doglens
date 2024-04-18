@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div className="mt-32">
       <h1
-        className={`${poppins.className} text-white text-center text-2xl md:text-4xl mb-5`}
+        className={`${poppins.className} text-white text-center text-2xl md:text-4xl mb-14`}
       >
         Some Dog Facts
       </h1>
