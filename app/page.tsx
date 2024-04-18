@@ -9,7 +9,7 @@ export default function Home() {
       <div className={style.wrapper}>
         <div className="text-white mb-10">
           <h1 className="text-6xl font-bold px-4 py-2 text-center mt-32 font-['']">
-            Bark Zone
+            Pawtopia Planet
           </h1>
 
           <p className="text-center text-xl ">
