@@ -155,7 +155,7 @@ const ChooseBreedComponent: React.FC = () => {
               height: "400px",
               objectFit: "cover",
               width: "400px",
-              borderRadius: "24px",
+              borderRadius: "32px",
               boxShadow:
                 "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
             }}

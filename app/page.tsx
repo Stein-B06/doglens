@@ -33,7 +33,7 @@ export default function Home() {
             alt="logo"
           />
 
-          <p className="mt-2 md:text-xl md:p-16 md:mx-8 text-white">
+          <p className="md:w-6/12 mt-2 md:text-xl md:p-16 md:mx-8 text-white">
             With just a click, you&apos;ll be transported into a world of random
             dog images, each one more adorable than the last.<br></br>{" "}
             <span className="">But wait, there&apos;s more!</span> With our
