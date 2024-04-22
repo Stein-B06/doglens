@@ -21,6 +21,7 @@ export default function Home() {
         </div>
         <div className="pt-8  flex flex-col justify-center items-center md:flex md:flex-row md:justify-center text-white m-4 ">
           <Image
+            priority={true} // {false} | {true}
             src="/dogs4.jpeg"
             width={500}
             height={500}
