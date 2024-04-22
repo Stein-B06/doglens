@@ -55,9 +55,9 @@ const DogImages: React.FC = () => {
               src={dogImageUrl}
               alt="Breed Image"
               style={{
-                height: "400px",
+                height: "450px",
                 objectFit: "cover",
-                width: "400px",
+                width: "450px",
                 borderRadius: "32px",
                 boxShadow:
                   "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
