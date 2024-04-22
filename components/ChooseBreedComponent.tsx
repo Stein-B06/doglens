@@ -148,7 +148,7 @@ const ChooseBreedComponent: React.FC = () => {
             </Button>
           </div>
           <Image
-            className="p-4 mx-4 bg-amber-800"
+            className="p-4 bg-amber-800"
             src={breedImage}
             alt="Random Dog"
             style={{
