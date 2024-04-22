@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     domains: ["images.dog.ceo"],
   },
-  output: "export",
+  // output: "export",
   reactStrictMode: true,
 };
 export default nextConfig;
