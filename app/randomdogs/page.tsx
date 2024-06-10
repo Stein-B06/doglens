@@ -8,8 +8,8 @@ export default function Page() {
           <li>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="250px"
-              height="125px"
+              width="150px"
+              height="75px"
               viewBox="0 0 24 24"
             >
               <path
@@ -62,8 +62,8 @@ export default function Page() {
           <li>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="240px"
-              height="120px"
+              width="160px"
+              height="80px"
               viewBox="0 0 24 24"
             >
               <path
@@ -80,8 +80,8 @@ export default function Page() {
           <li>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="200px"
-              height="100px"
+              width="140px"
+              height="70px"
               viewBox="0 0 24 24"
             >
               <path
@@ -134,8 +134,8 @@ export default function Page() {
           <li>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="200px"
-              height="100px"
+              width="100px"
+              height="50px"
               viewBox="0 0 24 24"
             >
               <path
@@ -152,8 +152,8 @@ export default function Page() {
           <li>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="220px"
-              height="110px"
+              width="120px"
+              height="60px"
               viewBox="0 0 24 24"
             >
               <path

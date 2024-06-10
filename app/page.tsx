@@ -221,7 +221,7 @@ export default function Home() {
             alt="logo"
           />
 
-          <p className=" mt-6 text-lg md:text-xl p-8 md:p-4 md:w-1/2 text-white bg-slate-500 rounded-xl">
+          <p className=" mt-6 text-lg md:text-xl p-8 md:p-4 md:w-1/2 text-white">
             With just a click, you&apos;ll be transported into a world of random
             dog images, each one more adorable than the last.<br></br>{" "}
             <span className="">But wait, there&apos;s more!</span> With our

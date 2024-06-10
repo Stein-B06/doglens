@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 :root {
-  /* background: hsla(333, 41%, 44%, 1); */
+  background: hsla(333, 41%, 44%, 1);
 
   background: radial-gradient(
-    circle,
     hsla(333, 41%, 44%, 1) 0%,
     hsla(33, 94%, 57%, 1) 100%
   );
