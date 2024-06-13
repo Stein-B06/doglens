@@ -1,5 +1,6 @@
 import DogImages from "@/components/randomDogs";
 import { poppins } from "@/app/ui/fonts";
+
 export default function Page() {
   return (
     <main className="mt-32">

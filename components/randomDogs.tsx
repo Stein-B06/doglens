@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Button } from "@mui/material";
+import MuiButton from "./MuiButton";
 import { poppins } from "@/app/ui/fonts";
 
 const DogImages: React.FC = () => {
@@ -37,34 +37,30 @@ const DogImages: React.FC = () => {
     <>
       <div className="flex justify-center items-center flex-col">
         <div className="rounded-3xl">
-          <div className="flex justify-center ">
-            <Button
-              style={{
-                boxShadow:
-                  "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
-              }}
+          <div className="flex justify-center mb-1 ">
+            <MuiButton
+              size="medium"
+              bgColor="linear-gradient(135deg, #6a11cb 25%, #2575fc 75%)"
               onClick={fetchRandomDogImage}
-              className="!bg-cyan-800 text-center !text-white hover:!bg-cyan-950  "
             >
               Click for dogs
-            </Button>
+            </MuiButton>
           </div>
           {dogImageUrl && (
-            <Image
-              className="p-4 bg-amber-800"
-              src={dogImageUrl}
-              alt="Breed Image"
-              style={{
-                height: "450px",
-                objectFit: "cover",
-                width: "450px",
-                borderRadius: "32px",
-                boxShadow:
-                  "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
-              }}
-              width={1000}
-              height={550}
-            />
+            <div className="w-full max-w-lg mx-auto">
+              <Image
+                src={dogImageUrl}
+                alt="Images of dogs"
+                width={500}
+                height={300}
+                // layout="responsive"
+                style={{
+                  borderRadius: "32px",
+                  boxShadow:
+                    "2px 2px 10px rgba(0, 0, 0, 0.1), 1px 1px 10px rgba(0, 0, 0, 10.08)",
+                }}
+              />
+            </div>
           )}
         </div>
       </div>
