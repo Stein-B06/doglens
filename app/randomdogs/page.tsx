@@ -188,10 +188,10 @@ export default function Page() {
           </li>
         </ul>
       </div>
-      <div className="text-white text-center text-2xl md:text-4xl font-bold">
+      <div className="text-white text-center text-3xl md:text-4xl font-bold">
         <h3 className={`${poppins.className}`}>Find your favorite dog</h3>
       </div>
-      <div className="mt-8">
+      <div className="mt-8 mx-6 mb-2">
         <DogImages />
       </div>
     </main>
